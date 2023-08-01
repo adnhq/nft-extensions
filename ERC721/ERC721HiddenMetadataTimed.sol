@@ -49,7 +49,6 @@ abstract contract ERC721HiddenMetadataTimed is ERC721 {
      * 
      * Requirements:
      * 
-     * - the caller must have `DEFAULT_ADMIN_ROLE` role.
      * - new reveal timestamp must be in the future.
      * - reveal timestamp must not have been reached.
      * 
@@ -70,7 +69,6 @@ abstract contract ERC721HiddenMetadataTimed is ERC721 {
      * 
      * Requirements:
      * 
-     * - the caller must have `DEFAULT_ADMIN_ROLE` role.
      * - reveal timestamp must not have been reached.
      */
     function setPlaceholderURI(string calldata placeholderURI_) public virtual notRevealed {
